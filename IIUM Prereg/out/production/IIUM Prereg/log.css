@@ -1,0 +1,16 @@
+#logBtn {
+  -fx-background-color:rgb(56,190,153);
+  -fx-border-radius: 5px;
+  -fx-background-radius: 5px;
+  -fx-border-color:  rgb(79,179,151);	 
+}
+
+#logBtn:hover{     
+  -fx-background-color:rgba(68,157,133);
+  -fx-border-color:  rgba(68,157,133);
+}
+
+#logBtn:pressed {
+  -fx-background-color:rgba(83,204,171);
+  -fx-border-color:  rgba(83,204,171);
+}

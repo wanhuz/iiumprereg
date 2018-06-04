@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.MainController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About IIUM Prereg" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane fx:id="anchorpane" maxHeight="-1.0" maxWidth="-1.0" onMouseClicked="#focus" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="remCs" layoutX="470.0" layoutY="111.0" mnemonicParsing="false" onAction="#deleteButtonListener" prefHeight="25.0" prefWidth="109.0" text="Remove Course" />
+            <Button fx:id="openSite" layoutX="470.0" layoutY="185.0" mnemonicParsing="false" onAction="#onMouseClicked" prefHeight="25.0" prefWidth="109.0" text="Open Prereg Site" />
+            <ToggleButton fx:id="toggleSemBtn" layoutX="470.0" layoutY="148.0" mnemonicParsing="false" onAction="#ToggleSemAction" text="Change Semester" />
+            <Button fx:id="startBtn" layoutX="470.0" layoutY="37.0" mnemonicParsing="false" onAction="#start" prefHeight="25.0" prefWidth="109.0" text="Start" />
+            <TableView fx:id="mainTable" layoutX="1.0" prefHeight="382.0" prefWidth="406.0">
+              <columns>
+                <TableColumn fx:id="CsCodeCol" prefWidth="204.0" text="Course Code" />
+                <TableColumn fx:id="SecCodeCol" prefWidth="203.0" text="Section" />
+              </columns>
+            </TableView>
+            <ListView fx:id="statusMsg" layoutX="422.0" layoutY="243.0" prefHeight="139.0" prefWidth="204.0" />
+            <Button fx:id="OpenAddCs" layoutX="470.0" layoutY="74.0" mnemonicParsing="false" onAction="#onMouseClicked" prefHeight="25.0" prefWidth="109.0" text="Add Course" />
+            <ImageView fx:id="loadIcon" fitHeight="25.0" fitWidth="27.0" layoutX="592.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@wip.gif" />
+               </image>
+            </ImageView>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
