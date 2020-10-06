@@ -1,4 +1,5 @@
-# IIUM Pre-Registration Utility
+# IIUM Pre-Registration Utility - Abandoned
+
 
 Automatically register subject for IIUM university subject. Input the course code + section and click start. 
 It will run at 12am the next day.
@@ -8,3 +9,6 @@ This program works, but the prereg website has bad coding that the program canno
   2. Weird website coding changes over new semester.
 
 A better advice is to brute force subject registration by using browser and fast internet. But IIUM server will probably crash and you might need to wait until 3am so yeah.. 
+
+Library used: JavaFX for UI and Selenium for web automation.
+If you really want to used this program, consider forking and fixing above issue. It can be done, however I'm done with this project.
