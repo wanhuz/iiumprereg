@@ -1,4 +1,4 @@
-# IIUM Pre-Registration Utility - Abandoned
+# IIUM Pre-Registration Utility
 
 Automatically register subject for IIUM university subject. Input the course code + section and click start. 
 It will run at 12am the next day.
